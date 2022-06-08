@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <div class="logo"><img src="img/1.svg"></div>
+            <div class="menu">
+                <ul>
+                    <li> <a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            <div class="sreach">
+                <input type="search">
+                <button>tìm kiếm</button>
+            </div>
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ads">
+            <h6>SIGN UP TO UNLOCK FREE SHIPPING</h6>
+        </div>
+        <div class="banner">
+            <img src="img/2.webp" width="70%">
+        </div>
+        <div class="banner2">
+            <img src="img/10.webp" width="90%">
+        </div>
+        <div class="giay">
+            <div class="products">
+                <ul>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/16.webp">
+                            <div class="icon">
+                                <button onclick="like()"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Old Skool</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">65.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                               
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/17.jpg">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Checkerboard Slip-On</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">55.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh16.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/18.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Slip-On</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">50.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh18.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/19.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Canvas Old Skool</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">43.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/20.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Old Skool</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">65.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/21.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                                
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Old Skool</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">66.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/22.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Authentic</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">48.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/23.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Slip-On</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">45.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/24.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Vans X Yucca Slip-On TRK</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">37.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="img/25.webp">
+                            <div class="icon">
+                                <button onclick=""><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Slip-On TRK</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">66.00$</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                <div class="mchitiet"><a href="anh17.html"><button>chi tiết</button></a></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="img/12.svg">
+            <h5>© Vans, A VF Company</h5>
+            <h5>Modern Slavery Statement</h5>
+        </div>
+
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
